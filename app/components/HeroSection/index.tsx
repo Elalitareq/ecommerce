@@ -44,31 +44,31 @@ const HeroSection = () => {
                 width={1920}
                 height={1080}
                 alt="headset"
-                className="w-screen h-full object-cover "
+                className="w-screen h-full  object-center object-cover  "
               />
             </div>
           );
         })}
       </div>
       <div className="bg-[#00000080]  w-full z-10 relative">
-        <div className="w-full container  h-[calc(100vh-6rem)] mx-auto px-4 py-8 relative flex flex-col lg:flex-row items-center">
+        <div className="w-full container justify-center lg:justify-normal   h-[calc(100vh-6rem)] mx-auto px-4 py-8 relative flex flex-col lg:flex-row items-center">
           <div className="w-full lg:w-1/2 text-white">
             <h1 className="text-4xl uppercase font-semibold">
               Buy Our Top Products Now
             </h1>
-            <button className="px-4 py-3 bg-white text-[#111] rounded border bg-opacity-60 hover:bg-opacity-100 border-white font-semibold tracking-widest transition-colors duration-500 mt-8 border-opacity-60 hover:border-opacity-100">Shop Now</button>
-            <button className="px-4 py-3 bg-transparent text-white ml-8 rounded border border-white hover:bg-white hover:text-[#111] font-semibold tracking-widest transition-colors duration-500 mt-8">New Arrivals</button>
+            <button className="px-4 py-3 bg-white mr-8  text-[#111] rounded border bg-opacity-60 hover:bg-opacity-100 border-white font-semibold tracking-widest transition-colors duration-500 mt-8 border-opacity-60 hover:border-opacity-100">Shop Now</button>
+            <button className="px-4 py-3 bg-transparent text-white rounded border border-white hover:bg-white hover:text-[#111] font-semibold tracking-widest transition-colors duration-500 mt-8">New Arrivals</button>
           </div>
           <div className="flex flex-row items-center absolute left-4 bottom-8 gap-4 z-10">
             {[...Array(images.length)].map((_, index) => (
               <span
                 key={index}
-                className={`h-1.5 rounded-full group cursor-pointer w-24 ${
+                className={`h-2 rounded-full group cursor-pointer w-10 lg:w-24 ${
                   index === currentImage ? "bg-white" : "bg-[#888]"
                 }`}
                 onClick={() => setCurrentImage(index)}
               >
-                <span className="h-1.5 rounded-full bg-transparent group-hover:bg-white block transition-all duration-200"></span>
+                <span className="h-2 rounded-full bg-transparent group-hover:bg-white block transition-all duration-200"></span>
               </span>
             ))}
           </div>
