@@ -24,7 +24,7 @@ const HeroSection = () => {
           setCurrentImage(0);
         setTimer(0);
       }
-    }, 3000);
+    }, 5000);
   }, [timer]);
 
   return (
