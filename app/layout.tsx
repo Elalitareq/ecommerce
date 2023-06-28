@@ -16,10 +16,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" >
-      <body className="bg-[#eee] overflow-hidden overflow-y-scroll min-h-screen">
+    <html lang="en" className='overflow-x-hidden' >
+      <body className="bg-[#eee] w-full min-h-screen flex flex-col">
         <Header/>
-        <main className='absolute left-0 min-h-screen w-full'>
+        <main className='w-full'>
         {children}
         </main>
         <Footer/>

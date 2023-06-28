@@ -47,7 +47,7 @@ const Header = () => {
             <FiShoppingCart />
             </button>
             </div>
-            <div className={`absolute top-full right-0   ${!openCart? "translate-x-full w-0":"w-full lg:w-1/2"}  transition-all duration-500 h-[calc(100vh-7rem)] bg-white  px-4 py-8`}>
+            <div className={`absolute top-full right-0 overflow-hidden ${!openCart? "translate-x-full w-0 lg:w-0":"w-full lg:w-1/2"}  transition-all duration-500 h-[calc(100vh-7rem)] bg-white  px-4 py-8`}>
                 <h3 className="text-xl font-bold border-b border-[#000] border-opacity-50 py-2 uppercase">Shopping Cart</h3>
                 <div className="w-full text-lg font-normal py-8">
                     No products added to cart
