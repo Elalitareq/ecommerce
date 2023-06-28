@@ -14,7 +14,7 @@ const Header = () => {
     const [open,setOpen]=useState(false)
     const [openCart,setOpenCart]=useState(false)
   return (
-    <header className="sticky w-full bg-white text-text text-lg font-bold tracking-wider  shadow-md top-0 left-0 h-28  z-50">
+    <header className="sticky w-full bg-white   text-text text-lg font-bold tracking-wider  shadow top-0 left-0 h-28  z-50">
 
       <div className="bg-text text-background flex justify-between w-full   px-4 py-2 text-sm">
         <div>Test</div>
@@ -47,7 +47,7 @@ const Header = () => {
             <FiShoppingCart />
             </button>
             </div>
-            <div className={`absolute top-full right-0 overflow-hidden ${!openCart? "translate-x-full w-0 lg:w-0":"w-full lg:w-1/2"}  transition-all duration-500 h-[calc(100vh-7rem)] bg-white  px-4 py-8`}>
+            <div className={`absolute top-full right-0 overflow-hidden ${!openCart? "translate-x-full w-0 lg:w-0 ":"w-full lg:w-1/2 px-4 "} py-8 transition-all duration-500 h-[calc(100vh-7rem)] bg-white  `}>
                 <h3 className="text-xl font-bold border-b border-[#000] border-opacity-50 py-2 uppercase">Shopping Cart</h3>
                 <div className="w-full text-lg font-normal py-8">
                     No products added to cart

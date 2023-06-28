@@ -61,15 +61,21 @@ const HeroSection = () => {
           </div>
           <div className="flex flex-row items-center absolute left-4 bottom-8 gap-4 z-10">
             {[...Array(images.length)].map((_, index) => (
-              <span
+              <div
                 key={index}
-                className={`h-2 rounded-full group cursor-pointer w-10 lg:w-24 ${
-                  index === currentImage ? "bg-white" : "bg-[#888]"
-                }`}
+                className="h-4  group w-10 lg:w-24 cursor-pointer"
+
                 onClick={() => setCurrentImage(index)}
               >
+
+              <span
+                className={`h-2 rounded-full  w-10 lg:w-24 block ${
+                  index === currentImage ? "bg-white" : "bg-[#888]"
+                }`}
+                >
                 <span className="h-2 rounded-full bg-transparent group-hover:bg-white block transition-all duration-200"></span>
               </span>
+                </div>
             ))}
           </div>
         </div>
