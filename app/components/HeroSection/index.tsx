@@ -56,6 +56,8 @@ const HeroSection = () => {
             <h1 className="text-4xl uppercase font-semibold">
               Buy Our Top Products Now
             </h1>
+            <button className="px-4 py-3 bg-white text-[#111] rounded border bg-opacity-60 hover:bg-opacity-100 border-white font-semibold tracking-widest transition-colors duration-500 mt-8 border-opacity-60 hover:border-opacity-100">Shop Now</button>
+            <button className="px-4 py-3 bg-transparent text-white ml-8 rounded border border-white hover:bg-white hover:text-[#111] font-semibold tracking-widest transition-colors duration-500 mt-8">New Arrivals</button>
           </div>
           <div className="flex flex-row items-center absolute left-4 bottom-8 gap-4 z-10">
             {[...Array(images.length)].map((_, index) => (
