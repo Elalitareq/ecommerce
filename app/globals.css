@@ -26,4 +26,6 @@
 
   }
 }
-  
+html {
+  scroll-behavior: smooth;
+}

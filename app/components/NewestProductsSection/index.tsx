@@ -74,7 +74,7 @@ const products = [
       "https://resource.logitech.com/content/dam/gaming/en/products/pro-x/pro-headset-gallery-1.png",
   },
 ];
-const TopProductSection = () => {
+const NewestProductsSection = () => {
   return (
     <section className="py-8 px-4">
       <div className="container mx-auto">
@@ -111,7 +111,7 @@ const TopProductSection = () => {
               <span className={` my-[1px] block text-xs sm:text-sm font-sans`}>
                 {product.salePrice || product.price}$
               </span>
-                <div className="lg:absolute text-[9px] my-1 lg:my-0 whitespace-nowrap sm:text-sm inset-0 lg:px-8 lg:opacity-0 lg:bg-[#00000090] lg:group-hover:opacity-100 transition-opacity duration-500 flex lg:flex-col gap-4 justify-center items-center">
+                <div className="lg:absolute text-[9px] my-1 lg:my-0 whitespace-nowrap sm:text-sm inset-0 lg:px-8 lg:opacity-0 lg:bg-[#00000090] lg:group-hover:opacity-100 transition-opacity duration-500 flex lg:flex-col gap-1 lg:gap-4 justify-center items-center">
                     <button className="px-3 py-2 bg-white/80 hover:bg-white border lg:border-white rounded transition-all duration-300 w-full">View Product</button>
                     <button className="px-3 py-2 bg-black/80 hover:bg-black text-white border border-black/80 rounded transition-all duration-300 w-full">Add To Cart</button>
 
@@ -124,4 +124,4 @@ const TopProductSection = () => {
   );
 };
 
-export default TopProductSection;
+export default NewestProductsSection;
